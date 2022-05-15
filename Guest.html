@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>مستشارك | الضيف </title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/Guest.css">
+  </head>
+
+  <body>
+
+    <div class="container  mx-auto ">
+          <header>
+          <div class="logo">
+          <img src="images/logo.png" alt="">
+          </div>
+          <h1>مستشارك</h1>
+          </header>
+
+    <div class="Sec0">
+        <div class="con" id="None-Border">
+                    <img src="images/work.svg" >
+                    <div class="content">
+                    <p id="None-Border">مجموعة من التمارين الرياضية المناسبة لجميع انواع الاجسام والحميات الغذائية </p>
+                    </div></div>
+
+
+       <div class="con">
+                  <img src="images/food.svg">
+                  <div class="content">
+                  <p>الكثير من الوصفات التي تلبي احتياج فئة من المجتمع و اصحاب الامرض المزمنة</p>
+                  </div></div>
+
+
+       <div class="con">
+                  <img src="images/calc.svg">
+                  <div class="content">
+                  <p>حسابات خاصة بالكتلة وكمية السعرات الحرارية لمعرفة كيفية البدء بالحمية</p>
+                  </div></div></div>
+
+
+    <section class="Sec1 text-right">
+                  <div class="Sec1-right">
+                  <div class="form-group row">
+                  <div class="col-xs-2 ">
+                 <label for="ex1" class="w1">الوزن = <div id="wnum">00</div> </label>
+                 <div class="slidecontainer">
+                 <input type="range" min="20" max="300" value="50" class="slider" id="myRange">
+                 </div></div>
+
+
+       <div class="col-xs-2">
+                 <label for="ex2" >الطول = <div id="hnum">00</div> </label>
+                 <div class="slidecontainer">
+                 <input type="range" min="100" max="250" value="50" class="slider" id="myRange2">
+                 </div></div>
+
+
+       <div class="col-xs-1">
+                <label for="ex2" > العمر = </label>
+                <input class="form-control"  type="number" id="age" min="13" max="100" ></div>
+
+
+       <div class="col-xs-3">
+                <label for="">الجنس = </label>
+                <select class="form-select" id="gender" aria-label="Default select example">
+                <option  disabled selected hidden></option>
+                <option value="1">ذكر</option>
+                <option value="0">أنثى</option>
+                </select></div>
+
+
+
+       <div class="col-xs-4">
+                <label for="">مستوى النشاط =  </label>
+                <select class="form-select" id="select" aria-label="Default select example">
+                <option value="" disabled selected hidden></option>
+                <option value="1.25">كثير الجلوس</option>
+                <option value="1.375">قليل الحركة </option>
+                <option value="1.55">متوسط الحركة</option>
+                <option value="1.725">كثير الحركة </option></select></div></div>
+
+
+       <button type="button" name="button" class="btn btn-success btn-lg text-success bg-white  " id="1" onclick="getVal();"> احسب الكتلة و السعرات الحرارية </button></div>
+
+
+       <div class="A d-flex justify-content-evenly">
+                <div class="Sec1-left ">
+                <div class="head">كتلة جسمك</div>
+                <div class="result" id="r">  0% </div>
+                <div id="stat"></div></div>
+
+
+      <div class="Sec12-left ">
+                <div class="head"> العدد السعرات الحرارية اليومية</div>
+                <div class="result" id="cal"> 0% </div>
+                <div id="stat2"></div></div></div></section>
+
+
+       <section class="Sec2">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7244.8485146484745!2d35.852731309301156!3d32.536521579079825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151c76ec7a3131eb%3A0xda276c01bae7585f!2z2KzYp9mF2LnYqSDYp9mE2YrYsdmF2YjZgyB8IFlhcm1vdWsgVW5pdmVyc2l0eQ!5e0!3m2!1sen!2sjo!4v1649418319978!5m2!1sen!2sjo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+       <div class="list">
+                <div class="header">
+                <h1>المرافقة الصحية القريبة</h1></div>
+                <div class="choose"><a  href="https://goo.gl/maps/qvPHDmVTC6exGVSQ9" target="_blank"><img src="images/gym1.png" alt=""></a>
+                </div>
+                <div class="choose"><a href="https://goo.gl/maps/aKHA7duVVvXoaF7q8" target="_blank"><img src="images/gym2.png" alt=""></a>
+                </div>
+                <div class="choose"><a href="https://goo.gl/maps/HTP9Rxv4WsUFJvRu8" target="_blank"><img src="images/gym3.png" alt=""></a>
+                </div>
+                <div class="choose"><a href="https://goo.gl/maps/2TDvSfpDwpER1vrR9" target="_blank"><img src="images/gym4.png" alt=""></a>
+                </div>
+                <div class="choose"><a href="https://goo.gl/maps/fjZCq7SYAriJVUy47" target="_blank"><img src="images/gym5.png" alt=""></a>
+                </div></div></section>
+
+
+        <section class="Sec3">
+                <div class="row">
+	              <div class="container">
+                <blockquote class="quote-card green-card"><p> أبدء حياتك الصحية الان وسجل مع مستشارك</p>
+                <button type="button" name="button" class="btn btn-success btn-lg text-success bg-white  " id="2" onclick="getVal();">سجل الان</button>
+                </blockquote></div></div></section>
+        </div>
+
+
+  </body>
+
+
+  <script type="text/javascript">
+
+
+                document.getElementById("myRange").addEventListener("input",displayDate);
+                function displayDate()
+                {
+                document.getElementById("wnum").innerHTML=document.getElementById("myRange").value;
+                }
+
+
+                document.getElementById("myRange2").addEventListener("input",displayDate2);
+                function displayDate2()
+                {
+                document.getElementById("hnum").innerHTML=document.getElementById("myRange2").value;
+                }
+
+
+                document.getElementById("1").addEventListener("click",getVal);
+                function getVal()
+                {
+                var w=document.getElementById('wnum').innerHTML;
+                var h=document.getElementById('hnum').innerHTML;
+                var age=document.getElementById('age').innerHTML;
+                h2=(w/((h/100)**2));
+                console.log(h2);
+                h3=h2.toString();
+                document.getElementById('r').innerHTML = h3.substring(0, 4);
+                document.getElementById("r").style.color = "black";
+
+                function one()
+                {
+                document.getElementById('stat2').innerHTML = "تشير كتلة جسمك الى وزن مثالي ولا تحتاج الى تغيير عدد السعرات الحرارية"
+                }
+
+                function tow()
+                {
+                document.getElementById('stat2').innerHTML = "تشير كتلة الجسم الى وجود وزن زائد , يجب انقاص عدد السعرات الحرارية اليومية بمقدار 400 سعرة لأنقاص 1 كغ خلال اسبوع"
+                }
+
+                function three()
+                {
+                document.getElementById('stat2').innerHTML = "تشير كتلة الجسم الى وجود سمنة متوسطة, يجب انقاص عدد السعرات الحرارية اليومية بمقدار 600 سعرة لأنقاص 1 كغ خلال اسبوع"
+                }
+
+                function four()
+                {
+                document.getElementById('stat2').innerHTML = "تشير كتلة الجسم الى وجود سمنة مفرطة, يجب انقاص عدد السعرات الحرارية اليومية بمقدار 800 سعرة لأنقاص 1 كغ خلال اسبوع"
+                }
+
+
+                if (h2>=18.5 && h2<=25)
+                {
+                console.log("1");
+                document.getElementById("stat2").style.color = "black";
+                document.getElementById("cal").style.color = "black";
+                document.getElementById("stat").innerText = 'تشير كتلة الجسم الى وزن مثالي للمحافظة عليه ننصح بممارسة مجموعة التمارين عند التسجيل مع مستشارك' ;
+                one();
+                }
+
+
+                if (h2>25 && h2<=30)
+                {
+                console.log("2");
+                document.getElementById("cal").style.color = "black";
+                document.getElementById("stat2").style.color = "black";
+                document.getElementById("stat").innerText = 'تشير كلتة الجسم الى وزن زائد , ننصحك بلأطلاع على احدى الحميات الغذائية عند التسجيل مع مستشارك' ;
+                tow();
+                }
+
+
+                if (h2>30 && h2<=35)
+                {
+                document.getElementById("cal").style.color = "black";
+                console.log("3");
+                document.getElementById("stat2").style.color = "black";
+                document.getElementById("stat").innerHTML = "تشير كتلة الجسم الى سمنة متوسطة , لحل هذه المشكلة ننصحك بلأطلاع على احدى الحميات الغذائية عند التسجيل مع مستشارك";
+                three();
+                }
+
+
+                if (h2>35 && h2<=40)
+                {
+                document.getElementById("cal").style.color = "black";
+                console.log("4");
+                document.getElementById("stat2").style.color = "black";
+                document.getElementById("stat").innerHTML = "تشير كتلة الجسم الى سمنة مفرطة , لحل هذه المكشلة ننصحك بلأطلاع على الحميات الغذائية والتمارين عند التسجيل مع مستشارك";
+                four();
+                }
+
+
+                if (h2>40 || h2<18.5)
+                {
+                document.getElementById("stat").innerHTML = " ادخل قيم صحيحة"
+                document.getElementById('stat2').innerHTML = " تأكد من ادخال جميع القيم ";
+                document.getElementById("cal").style.color = "white";
+                document.getElementById("stat2").style.color = "black";
+                document.getElementById("r").style.color = "white";
+                }
+
+
+                male =  (w * 10)+(h*6.25)-(age*5)+5;
+                female = (w * 10)+(h*6.25)-(age*5)-161;
+                var select = document.getElementById('select').value;
+                var  gender= document.getElementById('gender').value;
+
+
+                if (gender == 1 && select==1.25)
+                {
+                re = (male*1.25).toString();
+                document.getElementById('cal').innerHTML = re.substring(0,6);
+                }
+
+
+                if (gender == 1 && select==1.375)
+                {
+                re = (male*1.375).toString();
+                console.log(re.substring(0,5));
+                document.getElementById('cal').innerHTML = re.substring(0,6);
+                }
+
+
+                if (gender == 1 && select==1.55)
+                {
+                re = (male*1.55).toString();
+                document.getElementById('cal').innerHTML = re.substring(0,6);
+                }
+
+
+                if (gender == 1 && select==1.725)
+                {
+                re = (male*1.725).toString();
+                document.getElementById('cal').innerHTML = re.substring(0,6);
+                }
+
+
+                if (gender == 0 && select==1.25)
+                {
+                re = (female*1.25).toString();
+                document.getElementById('cal').innerHTML = re.substring(0,6);
+                }
+
+
+                if (gender == 0 && select==1.375)
+                {
+                re = (female*1.375).toString();
+                document.getElementById('cal').innerHTML = re.substring(0,6);
+                }
+
+
+                if (gender == 0 && select==1.55)
+                {
+                re = (female*1.55).toString();
+                document.getElementById('cal').innerHTML = re.substring(0,6);
+                }
+
+
+                if (gender == 0 && select==1.725)
+                {
+                re = (female*1.725).toString();
+                document.getElementById('cal').innerHTML = re.substring(0,6);
+                }
+                }
+
+  </script>
+</html>
