@@ -1,0 +1,206 @@
+
+
+body{
+    
+    font-family: 'Almarai', sans-serif;  /* type of font */
+    
+}
+
+
+.imag img{
+    
+    width: 90vh;
+    height: 90vh;
+    margin-left: 20%;
+
+}
+
+.exercises{
+    position: relative;
+    margin-top: 200px;
+    
+
+
+}
+
+
+
+.exercises button{
+    
+    border: 1px solid rgb(37, 200, 121);
+    border-radius: 15px;
+    
+}
+
+
+.exercises .back{
+    position: absolute;
+    top: 7%;
+    left: 48%;
+    width: 90px;
+    padding: 5px;
+
+}
+
+
+.exercises .chest{
+    position: absolute;
+    top: 7%;
+    left: 41%;
+    width: 90px;
+    padding: 5px;
+
+}
+
+
+.exercises .shoulder{
+    position: absolute;
+    top: 8%;
+    left: 25%;
+    width: 90px;
+    padding: 5px;
+
+}
+
+.exercises .six-pack{
+    position: absolute;
+    top: 29%;
+    left: 43%;
+    width: 90px;
+    padding: 5px;
+
+}
+
+.exercises .biceps{
+    position: absolute;
+    top: 22%;
+    left: 21%;
+    width: 90px;
+    padding: 5px;
+}
+
+.exercises .triceps{
+    position: absolute;
+    top: 25%;
+    left: 66%;
+    width: 90px;
+    padding: 5px;
+}
+
+.exercises .anterior{
+    position: absolute;
+    top: 59%;
+    left: 44%;
+    width: 90px;
+    padding: 5px;
+}
+
+.exercises .posterioe{
+    position: absolute;
+    top: 58%;
+    left: 65%;
+    width: 90px;
+    padding: 5px;
+}
+
+.exercises .back-shoulder{
+    position: absolute;
+    top: 10%;
+    left: 65%;
+    width: 90px;
+    padding: 5px;
+}
+
+
+.exercises .show-exercises div:not(.tab-one){
+    display: none;
+}
+
+
+.show-exercises{
+    position: relative;
+    margin-top: 100px;
+    direction: rtl;
+    margin-left: 30%;
+}
+
+.tab-one , .tab-tow , .tab-three , .tab-four , .tab-five , .tab-six , .tab-seven , .tab-eight{
+    position: absolute;
+}
+
+.show-exercises img{
+    margin-right: 300px;
+}
+
+
+
+
+
+/*start footer*/
+.footer{
+    
+    padding-top: 20px;
+    margin-top: 100px;
+    direction: rtl;
+    position: relative;
+    margin-top: 500px; 
+    
+}
+
+.footer p{
+    direction: rtl;
+}
+
+
+/*end footer*/
+/*end footer*/
+
+
+/*start navbar*/
+
+
+@media all and (min-width: 992px) {
+	.navbar .dropdown-menu-end{ right:0; left: auto;  }
+	.navbar .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.3s; margin-top:0;  }
+	.navbar .nav-item:hover .nav-link{ color: #fff;  }
+	.navbar .dropdown-menu.fade-down{ top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
+	.navbar .dropdown-menu.fade-up{ top:180%;  }
+	.navbar .nav-item:hover .dropdown-menu{ transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
+}
+
+.navbar .items li{
+
+    padding-left: 30px;
+}
+
+.navbar .nav-item .drop{
+
+    padding-right: 100px;
+}
+
+
+.navbar{
+    background: #212529;
+}
+
+.scrolled{
+    background: rgba(0, 0, 0, 0.8)
+}
+
+.navbar .navbar-brand{
+    font-size: 30px;
+
+}
+
+
+.navbar .navbar-brand span{
+    color: sandybrown;
+}
+
+
+
+
+/*end navbar*/
+
+
+
