@@ -1,0 +1,96 @@
+@keyframes Welcome {
+  0% {
+    opacity: .1; }
+  100% {
+    opacity: .9; } }
+
+::-webkit-scrollbar {
+  width: 10px; }
+
+body {
+  animation: Welcome 1s;
+  margin: 0;
+  font-family: 'Almarai', sans-serif; }
+
+.signup-form {
+  direction: rtl;
+  background-color: #00970B;
+  color: white; }
+
+#header {
+  color: white; }
+
+header {
+  width: 100%;
+  height: 10vh;
+  margin-top: 5vh;
+  text-align: center;
+  font-family: 'Noto Nastaliq Urdu', serif; }
+  header h1 {
+    display: block;
+    color: #00970B;
+    font-size: 4rem; }
+  header img {
+    position: absolute;
+    right: 55%;
+    width: 8vh;
+    height: 8vh; }
+
+.Sec1 {
+  direction: rtl;
+  background-color: #00970B;
+  margin-top: 10vh;
+  height: 200vh;
+  box-shadow: 0 4px 8px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  .Sec1 .head {
+    color: white;
+    padding-right: 12vh;
+    padding-top: 10vh; }
+  .Sec1 .Shecdule {
+    height: 100vh;
+    width: 90%;
+    background-color: white;
+    margin: auto; }
+  .Sec1 .demTable {
+    font-size: 1.75rem;
+    width: 100%;
+    height: 100%;
+    border: 7px solid #0c920e;
+    border-collapse: collapse;
+    padding: 12px; }
+  .Sec1 .demTable th {
+    border: 7px solid #0c920e;
+    padding: 12px;
+    background: #ffffff;
+    color: #313030; }
+  .Sec1 .demTable td {
+    border: 7px solid #0c920e;
+    text-align: center;
+    padding: 12px;
+    background: #ffffff;
+    color: #313030; }
+  .Sec1 .progress {
+    height: 5vh;
+    transition: all .2s;
+    width: 1000px; }
+    .Sec1 .progress:hover {
+      height: 10vh; }
+  .Sec1 .Pr {
+    margin-top: 5vh;
+    color: white; }
+  .Sec1 .points {
+    height: 5vh;
+    display: inline-block;
+    width: 10vh;
+    font-size: 2rem; }
+  .Sec1 h3, .Sec1 .Prpoint {
+    display: inline-block; }
+  .Sec1 #Get1, .Sec1 #Get2 {
+    width: 40vh;
+    transition: all .3s; }
+    .Sec1 #Get1:hover, .Sec1 #Get2:hover {
+      padding: 10px;
+      color: green; }
+  .Sec1 #Get0 {
+    margin-right: -40vh;
+    transition: all .2s; }

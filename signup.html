@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>مستشارك | تسجيل</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/signup.css">
+  </head>
+
+
+  <body>
+    <div class="">
+
+
+      <header>
+        <div class="logo">
+        <img src="images/logo.png" alt="">
+        </div><h1>مستشارك</h1>
+      </header>
+
+
+      <div class="row">
+        <div class="">
+            <div class="signup-form">
+                <form action="" class="mt-5 border p-4  shadow">
+                    <h2 class="mb-5" id="header">أبدء الرحلة مع مستشارك</h2>
+                    <div class="row">
+                      <h4>المعلومات الشخصية</h4>
+
+
+                        <div class="mb-3 col-md-4">
+                            <label>الاسم الاول<span class="text-danger"></span></label>
+                            <input required autocomplete="off" type="text" name="fname" class="form-control" placeholder="ادخل الاسم الاول">
+                        </div>
+
+
+                        <div class="mb-3 col-md-4">
+                            <label>اسم العائلة<span class="text-danger"></span></label>
+                            <input required autocomplete="off" type="text" name="Lname" class="form-control" placeholder="ادخل اسم العائلة">
+                        </div>
+
+
+                        <div class="mb-3 col-md-4">
+                            <label>العمر<span class="text-danger"></span></label>
+                            <input required autocomplete="off" type="number" name="age" class="form-control" placeholder="ادخل العمر" >
+                        </div>
+
+
+                        <div class="mb-3 col-md-6">
+                            <label>رقم الهاتف<span class="text-danger"></span></label>
+                            <input required autocomplete="off" type="tel" name="tel" class="form-control" placeholder="ادخل رقم الهاتف" >
+                        </div>
+
+
+                        <div class="mb-3  col-md-6">
+                            <label>البريد الألكتروني<span class="text-danger"></span></label>
+                            <input required autocomplete="off" type="email" name="email" class="form-control" placeholder="ادخل البريد الألكتروني" >
+                        </div>
+
+
+                        <div class="mb-3 col-md-6">
+                            <label>كلمة المرور<span class="text-danger"></span></label>
+                            <input required autocomplete="off" id="pass" type="password" name="password" class="form-control" placeholder="*************" >
+                        </div>
+
+
+                        <h4>المعلومات  الجسدية</h4>
+
+
+                        <div class="mb-3 col-md-4">
+                            <label>الطول<span class="text-danger"></span></label>
+                            <input required autocomplete="off" type="number" name="age" class="form-control" placeholder="ادخل الطول بال ( سم)" >
+                        </div>
+
+
+                        <div class="mb-3 col-md-4">
+                            <label>الوزن<span class="text-danger"></span></label>
+                            <input required autocomplete="off" type="number" name="age" class="form-control" placeholder="ادخل الوزن بال ( كغ )" >
+                        </div>
+
+
+                        <label>الجنس<span class=""></span></label>
+                        <select required  class="form-select " aria-label="Default select example">
+                          <option selected disabled hidden></option>
+                          <option value="male">ذكر</option>
+                          <option value="female">أنثى</option>
+                        </select>
+
+
+                      <div class="s2">
+                        <label>امراض مزمنة<span class=""></span></label>
+                        <select required class="form-select " aria-label="Default select example">
+                          <option selected disabled hidden></option>
+                          <option value="suger">السكري</option>
+                          <option value="pressure">الضغط</option>
+                          <option value="noqrus">النقرص</option>
+                          <option value="other">اخرى ...</option>
+                          <option value="none">لا أعاني من اي مرض مزمن </option>
+                        </select>
+                      </div>
+
+
+                      <div class="col-md-12" id="end" >
+                          <button type="submit"   class="btn btn-outline-success bg-white float-end btn-lg"  id="submit">سجل الان</button>
+                      </div></div></form></div></div></div></div>
+
+  <footer>
+    <h3>
+      <a>الصفحة الرئيسية </a>
+    </h3>
+  </footer>
+
+
+</body>
+
+
+  <script type="text/javascript">
+  var pass = document.getElementById("pass");
+  pass.addEventListener("mouseover", function () {
+    console.log("Ahmed");
+    pass.type = "text";
+  })
+  pass.addEventListener("mouseleave", function () {
+    console.log("Ahmed");
+    pass.type = "password";
+  })
+  </script>
+
+
+</html>

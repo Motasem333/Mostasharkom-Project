@@ -1,0 +1,118 @@
+@keyframes Welcome {
+    0%{opacity: .1;}
+    100%{opacity: .9;}
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  @charset "UTF-8";
+  body {
+    animation: Welcome 1s;
+    margin: 0;
+   font-family: 'Almarai', sans-serif;
+  }
+  .signup-form { direction: rtl;background-color: #00970B;
+  color: white;}
+  #header {
+    color: white;
+  }
+  header {
+    width: 100%;
+    height: 10vh;
+    h1{
+      display: block;
+      color: #00970B;
+      font-size: 4rem;
+    }
+    img {
+      position: absolute;
+      right: 55%;
+      width: 8vh;
+      height: 8vh;
+    }
+    margin-top: 5vh;
+    text-align: center;
+    font-family: 'Noto Nastaliq Urdu', serif;
+  }
+  .Sec1 {
+    direction: rtl;
+    background-color:   #00970B;
+      margin-top: 10vh;
+      height: 200vh;
+      box-shadow: 0 4px 8px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+      .head{
+          color: white;
+          padding-right: 12vh;
+          padding-top: 10vh;
+      }
+
+      .Shecdule {
+        height: 100vh;
+        width: 90%;
+        background-color: white;
+        margin: auto;
+      }
+
+      .demTable {
+        font-size: 1.75rem;
+        width: 100%;
+        height: 100%;
+        border:7px solid #0c920e;
+        border-collapse:collapse;
+        padding:12px;
+      }
+      .demTable th {
+        border:7px solid #0c920e;
+        padding:12px;
+        background: #ffffff;
+        color: #313030;
+      }
+      .demTable td {
+        border:7px solid #0c920e;
+        text-align:center;
+        padding:12px;
+        background: #ffffff;
+        color: #313030;
+      }
+
+      .progress {
+        height: 5vh;
+
+        transition: all .2s;
+        width: 1000px;
+        &:hover {
+          height: 10vh;
+        }
+
+      }
+
+      .Pr{
+        margin-top: 5vh;
+        color: white;
+      }
+      .points {
+        height: 5vh;
+        display: inline-block;
+        width: 10vh;
+        font-size: 2rem;
+      }
+      h3,.Prpoint{
+        display: inline-block;
+      }
+
+      #Get1,#Get2 {
+        width:40vh;
+        transition: all .3s;
+        &:hover{
+          padding: 10px;
+          color: green;
+        }
+      }
+      #Get0{
+        margin-right: -40vh;
+        transition: all .2s;
+      }
+
+
+    }

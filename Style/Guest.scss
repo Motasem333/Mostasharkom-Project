@@ -1,0 +1,370 @@
+body {
+  animation: Welcome 1s;
+  margin: 0;
+ font-family: 'Almarai', sans-serif;
+}
+header {
+  width: 100%;
+  height: 10vh;
+  h1{
+    display: block;
+    color: #00970B;
+    font-size: 4rem;
+  }
+  img {
+    position: absolute;
+    right: 55%;
+    width: 8vh;
+    height: 8vh;
+  }
+  margin-top: 5vh;
+  margin-bottom: 10vh;
+  text-align: center;
+  font-family: 'Noto Nastaliq Urdu', serif;
+}
+.head {
+  width: 100%;
+  height: 30vh;
+  margin-bottom: 20px;
+  img {
+    width: 100%;
+    height: 120%;
+  }
+}
+/* width */
+@keyframes Welcome {
+  0%{opacity: .1;}
+  100%{opacity: .9;}
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: green;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.Sec1 {
+direction: rtl;
+color: black;
+background-color:   #00970B;
+  margin-top: 10vh;
+  height: 110vh;
+  box-shadow: 0 4px 8px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.Sec1-right {
+  display: block;
+    margin-top: 10vh;
+    margin-right: 12vh;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    width: 90%;
+    height: 50%;
+    background-color: transparent;
+    input{
+      margin-top:2vh;
+      border: 1px solid white;
+      outline: none ;
+      width: 50%;
+      height: 6vh;
+      font-size: 1.5rem;
+      border-bottom: 6px solid white;
+      border-radius: 10px;
+      &::placeholder {
+        opacity: .6;
+        font-size: 1.4rem;
+      }
+    }
+
+}
+
+
+
+.Sec1-left ,.Sec12-left {
+  display: inline-block;
+  margin-top: 4vh;
+  margin-right: 4vh;
+  width: 30%;
+  height:40vh;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  .head {
+    width: 100%;
+    height: 10%;
+    font-size: 2rem;
+    color: green;
+    display: block;
+  }
+  .result{
+    display: block;
+    font-size: 4rem;
+    width: 100%;
+    height: 40%;
+  }
+}
+.Sec12-left{
+  width: 50%;
+}
+/*
+.Sec1-left,.Sec12-left {
+  height: 50vh;
+  background-color: blue;
+  width: 30%;
+  margin-top: 10vh;
+}*/
+.Sec0{
+
+  //box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color:white ;
+  color: #00970B;
+  font-size: 1rem;
+  border-radius: 20px;
+  transition: all .2s;
+  &:hover{
+    //padding: 5px;
+    //transform: scale(1.05);
+  }
+
+  .con {
+    transition: all .2s;
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.2);
+    font-weight: bolder;
+    line-height: 200%;
+    margin-top: 0px;
+    width: 40%;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+  //  border-left: 30px solid white;
+    padding: 20px;
+    p{font-size: 1.5rem;}
+    &:hover {
+      transform: scale(1.1);
+      img {
+        transform: rotate(360deg);
+      }
+    }
+
+
+
+
+  }
+    #None-Border {
+      border: none;
+    }
+  width: 100%;
+  height: 35vh;
+  display:flex;
+  justify-content: space-around;
+  img {
+    transition: all .3s;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: 5px;
+  }
+}
+
+.slidecontainer {
+  width: 130%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: white;
+  outline: none;
+  -webkit-transition: .2s;
+  transition: all .2s;
+}
+
+.slider:hover {
+  padding: 20px;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}
+#wnum , #hnum {
+  display: inline-block;
+  height: content;
+  background-color: white;
+  color: #00d600ff;
+  border-radius: 50%;
+padding: 5px 10px;}
+#age {
+  width: 50%;
+  display: block;
+}
+.col-xs-1{
+  position: absolute;
+  margin-top: 5.5vh;
+  left: 25%;
+  width: 24%;
+  height: 20vh;
+}
+.col-xs-2{
+  margin-top: 5vh;
+  width: 51%;
+
+}
+.col-xs-3{
+  position: absolute;
+  margin-top: 5.5vh;
+  left: 10%;
+  width: 24%;
+  height: 22vh;
+  .form-select{
+    margin-top: 2vh;
+    border-radius: 10px;
+    width: 50%;
+  }
+}
+.col-xs-4{
+  position: absolute;
+  margin-top: 30vh;
+  left: 25%;
+  width: 24%;
+  height: 22vh;
+  .form-select{
+    margin-top: 2vh;
+    border-radius: 10px;
+    width: 100%;
+  }
+}
+.Sec2 {
+  margin-top: 10vh;
+  height: 70vh;
+  width: 100%;
+  background-color: red;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  iframe {
+    float: right;
+    height: 100%;
+    width: 65%;
+  }
+  .list {
+    overflow-y: scroll;
+    width: 35%;
+    height: 100%;
+    float: left;
+    background-color: blue;
+    .choose {
+      width: 100%;
+      height: 20%;
+      //border: 1px solid black;
+      overflow-x: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .header {
+      width: 100%;
+      height: 22.5%;
+      color: white;
+      text-align: center;
+      font-size: 1rem;
+      background-color: green;
+    }
+  }
+
+}
+
+.Sec3 {
+  margin-top: 10vh;
+  height: 20vh;
+  width: 100%;
+}
+.text-center {
+  text-align: center;
+}
+
+.quote-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  align-items: center;
+  background: #fff;
+  color: #222222;
+  padding: 20px;
+  padding-left: 50px;
+  position: relative;
+  min-height: 20vh;
+}
+.quote-card p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 2vh;
+}
+.quote-card:before {
+  content: "“";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 5em;
+  color: rgba(238, 238, 238, 0.8);
+  font-weight: normal;
+}
+.quote-card:after {
+  content: "”";
+  position: absolute;
+  bottom: -40%;
+  line-height: 100px;
+  right: 1px;
+  font-size: 15rem;
+  color: white;
+  font-weight: normal;
+}
+.quote-card.green-card {
+  background: #00970B;
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.quote-card.green-card:before, .quote-card.green-card:after {
+  color:white ;
+}
+#stat , #stat2{
+  width: 90%;
+  align-items: center;
+  margin-right: 2vh;
+  color: black;
+  height: 40%;
+  font-size: 1rem;
+}
+#stat2{
+  color: white;
+margin-right: 4vh;}
+#r {
+  color: white;
+}
+#cal{
+  color: white;
+}
