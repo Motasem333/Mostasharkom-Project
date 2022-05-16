@@ -85,7 +85,7 @@
                           <h5>-يتم الحصول على كود خصم بمقدار 25% عند انجاز 500 نقطة فأكثر</h5>
                           <h5>-يتم الحصول على هدية من اختيارك في حال الوصول الى 1000 نقطة في اقل من 50 يوم</h5>
                           <button class="btn btn-outline-success btn-lg bg-white" id="Get1">طلب الحصول على كود</button>
-                          <button class="btn btn-outline-success btn-lg bg-white" id="Get0">XXXXXX</button>
+                          <button class="btn btn-outline-success btn-lg bg-white" id="Get0"><img src="images/cancel.png"  id="cancel"alt="">XXXXXX </button>
                           <br><br>
                           <button class="btn btn-outline-success btn-lg bg-white" id="Get2">طلب الحصول على هدية</button>
 
@@ -164,16 +164,15 @@
                 {
                 if (Prp <500){
                     document.getElementById("Get0").innerHTML = "لم يتم الحصول على عدد نقاط كافي"
-                    document.getElementById("Get0").style.marginRight = "3vh";
-                    
+                    document.getElementById("Get0").style.marginRight = "3vh";   
                 }
                 if (Prp >500){
-                    document.getElementById("Get0").innerHTML =100000
+                    function getRndInteger(min, max) {
+                    return Math.floor(Math.random() * (max - min)) + min;
+                    }
+                    document.getElementById('Get0').innerHTML = getRndInteger(111111,999999)
                     document.getElementById("Get0").style.marginRight = "3vh";
                 }
-
-
-
                 }
 
 </script>
